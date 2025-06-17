@@ -18,7 +18,7 @@ function CustomNavbar() {
           <img src={logo} alt="Logo" className="d-inline-block align-top" />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" className='bg-white' />
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mx-auto text-center" onSelect={handleSelect}>
