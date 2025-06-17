@@ -1,0 +1,151 @@
+/* === General Styles === */
+
+.works-section {
+  padding: 64px 100px;
+  margin-bottom: 10px;
+  background-color: #0c0c0c;
+  color: white;
+}
+
+.works-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.works-header h2 {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-all {
+  color: white;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.works-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #5d5d5d;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative; /* Required for ellipse */
+  z-index: 1; /* Ensure content stacks above ellipse */
+}
+
+.works-image img {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.works-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  min-width: 280px;
+  position: relative;
+  z-index: 1;
+}
+
+.works-content h3 {
+  font-size: 32px;
+}
+
+.works-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tags span {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.case-study-btn {
+  width: fit-content;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* === Ellipse Background === */
+.ellipse-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 209px;
+  height: 165px;
+  background-color: #FF804A;
+  border-radius: 25%;
+  filter: blur(300px);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* === Responsive Styles === */
+
+@media (max-width: 991px) {
+  .works-section {
+    padding: 64px 50px;
+  }
+
+  .works-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .works-content {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .works-section {
+    padding: 64px 20px;
+  }
+
+  .works-header h2 {
+    font-size: 28px;
+  }
+
+  .works-content h3 {
+    font-size: 24px;
+  }
+
+  .works-content p {
+    font-size: 16px;
+  }
+
+  .tags {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
