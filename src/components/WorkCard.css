@@ -15,7 +15,8 @@
 }
 
 .works-header h2 {
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 10px;
